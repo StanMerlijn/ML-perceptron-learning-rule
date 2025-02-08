@@ -8,4 +8,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_executable(MLPerceptronTest test.cpp ../src/perceptron.cpp ../src/perceptronLayer.cpp ../src/perceptronNetwork.cpp)
+set(SOURCES test.cpp ../perceptron.cpp)
+add_executable(MLPerceptronTest ${SOURCES})

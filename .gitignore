@@ -30,4 +30,6 @@
 *.exe
 *.out
 *.app
-test/compile_run.zsh
+
+src/test/build/*
+src/test/compile_run.zsh
