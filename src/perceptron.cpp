@@ -34,6 +34,15 @@ void Perceptron::update(const std::vector<std::vector<int>>& inputs, const std::
     }
 }
 
+double Perceptron::loss(const std::vector<std::vector<int>>& inputs, const std::vector<int>& targets) const
+{
+    std::vector<int> predictions;
+    for (int i = 0; i < inputs.size(); i++) {
+        predictions.push_back(predict(inputs[i]));
+    }
+    return MSE(targets, predictions);
+}
+
 void Perceptron::__str__(int verbose) const
 {
     // Printing the weights 

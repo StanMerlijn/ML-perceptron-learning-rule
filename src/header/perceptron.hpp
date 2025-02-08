@@ -1,4 +1,5 @@
 #pragma once
+#include "MSE.hpp"
 #include <iostream>
 #include <vector>
 
@@ -9,6 +10,7 @@ public:
 
     int predict(const std::vector<int>& x) const;
     void update(const std::vector<std::vector<int>>& inputs, const std::vector<int>& targets, int epochs);
+    double loss(const std::vector<std::vector<int>>& inputs, const std::vector<int>& targets) const;
     void __str__(int verbose) const;
     
 private:

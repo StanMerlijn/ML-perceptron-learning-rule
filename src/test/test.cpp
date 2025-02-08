@@ -1,5 +1,4 @@
 #include "../header/perceptron.hpp"
-#include "../header/MSE.hpp"
 
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
@@ -35,8 +34,8 @@ TEST_CASE("Perceptron AND gate", "[perceptron]")
 
     // Print the weights
     andGate.__str__(1);
+
+    // Calculate the loss
+    double loss = andGate.loss(inputs, targets);
+    std::cout << "Loss: " << loss << std::endl;
 }
-
-
-
-
