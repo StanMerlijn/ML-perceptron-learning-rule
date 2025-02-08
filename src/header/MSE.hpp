@@ -1,6 +1,7 @@
+#pragma once
 #include <iostream>
 #include <vector>
-
+#include <cmath>
 
 /**
  * @brief Calculates the mean squared error between two vectors.
@@ -16,7 +17,7 @@
  *         Returns -1 if the sizes of the input vectors do not match.
  */
 
-double mean_squared_error(const std::vector<double>& targets, const std::vector<double>& predictions) 
+inline double MSE(const std::vector<int>& targets, const std::vector<int>& predictions) 
 {   
     // Ensure both arrays are the same size
     if (targets.size() != predictions.size()) return -1;
