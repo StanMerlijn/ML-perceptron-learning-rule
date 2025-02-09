@@ -46,7 +46,7 @@ double Perceptron::loss(const std::vector<std::vector<float>>& inputs, const std
 void Perceptron::__str__(int verbose) const
 {
     // Printing the weights 
-    std::cout << "weights:\n";
+    std::cout << "weights for the perceptron:\n";
     for (int i = 0; i < weights.size(); i++) {
         std::cout << weights[i] << " ";
     }
