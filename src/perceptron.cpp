@@ -3,7 +3,7 @@
 Perceptron::Perceptron(std::vector<double> weights, double bias, double learningRate)
     : weights(weights), bias(bias), learningRate(learningRate) {}
 
-int Perceptron::predict(const std::vector<int>& inputs) const 
+int Perceptron::predict(const std::vector<float>& inputs) const 
 {
     // Dot prodcut for an array of size 2  
     double dot_product = bias;
@@ -14,7 +14,7 @@ int Perceptron::predict(const std::vector<int>& inputs) const
     return dot_product >= 0 ? 1 : 0;
 }
 
-void Perceptron::update(const std::vector<std::vector<int>>& inputs, const std::vector<int>& targets, int epochs) 
+void Perceptron::update(const std::vector<std::vector<float>>& inputs, const std::vector<int>& targets, int epochs) 
 {
     // ensure both arrays are the same size
     if (inputs.size() != targets.size()) return;
@@ -34,7 +34,7 @@ void Perceptron::update(const std::vector<std::vector<int>>& inputs, const std::
     }
 }
 
-double Perceptron::loss(const std::vector<std::vector<int>>& inputs, const std::vector<int>& targets) const
+double Perceptron::loss(const std::vector<std::vector<float>>& inputs, const std::vector<int>& targets) const
 {
     std::vector<int> predictions;
     for (int i = 0; i < inputs.size(); i++) {
@@ -47,9 +47,9 @@ void Perceptron::__str__(int verbose) const
 {
     // Printing the weights 
     std::cout << "weights:\n";
-    for (auto i : weights)
-        std::cout << i << " ";
-
+    for (int i = 0; i < weights.size(); i++) {
+        std::cout << weights[i] << " ";
+    }
     // Other info 
     if (verbose >= 1) {
         std::cout << "\nbias = " << bias << "\n";
