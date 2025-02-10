@@ -100,6 +100,18 @@ std::vector<std::vector<float>> get_features(const std::vector<std::vector<std::
     return features;
 }
 
+/**
+ * @brief Filters out data points with a specific target value.
+ *
+ * This function takes a set of features and corresponding target values, and filters out
+ * the data points where the target value matches the specified target. The remaining data
+ * points are returned in a new irisData structure.
+ *
+ * @param features A vector of vectors containing the feature data.
+ * @param targets A vector containing the target values corresponding to the feature data.
+ * @param target The target value to filter out from the data.
+ * @return irisData A structure containing the filtered feature data and target values.
+ */
 irisData filter_data(const std::vector<std::vector<float>>& features, const std::vector<int>& targets, int target)
 {
     std::vector<std::vector<float>> filtered_features;

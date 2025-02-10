@@ -10,7 +10,7 @@ int Perceptron::predict(const std::vector<float>& inputs) const
     for (int i = 0; i < weights.size(); i++) {
         dot_product += weights[i] * inputs[i];
     }
-    // double dot_product = weights[0] * inputs[0] + weights[1] * inputs[1] + bias;
+    // Threshold function
     return dot_product >= 0 ? 1 : 0;
 }
 
@@ -21,9 +21,12 @@ void Perceptron::update(const std::vector<std::vector<float>>& inputs, const std
 
     // Train the perceptron
     for (int epoch = 0; epoch < epochs; epoch++) {
+        // Loop through each input
         for (int i = 0; i < inputs.size(); i++) {
+            // Get the prediction and error
             double pred = predict(inputs[i]);
             double error = targets[i] - pred;
+
             // Update each weight based on the input value
             for (int j = 0; j < weights.size(); j++) {
                 weights[j] += learningRate * error * inputs[i][j];
@@ -36,6 +39,7 @@ void Perceptron::update(const std::vector<std::vector<float>>& inputs, const std
 
 double Perceptron::loss(const std::vector<std::vector<float>>& inputs, const std::vector<int>& targets) const
 {
+    // Get the predictions for the inputs
     std::vector<int> predictions;
     for (int i = 0; i < inputs.size(); i++) {
         predictions.push_back(predict(inputs[i]));
