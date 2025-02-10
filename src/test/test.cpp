@@ -12,7 +12,6 @@
 #define WEIGHTS std::vector<double>{0.5, 0.5}
 #define BIAS 0.5
 #define LEARNING_RATE 0.1
-// #define DEBUG
 
 // Read the iris data set
 std::vector<std::vector<std::string>> data = read_csv("../../data/iris.csv");
@@ -21,25 +20,8 @@ std::vector<std::vector<std::string>> data = read_csv("../../data/iris.csv");
 std::vector<int>                targets  = get_targets(data);
 std::vector<std::vector<float>> features = get_features(data);
 
-#ifdef DEBUG    
-// Output the features and targets 
-for (int i = 0; i < targets.size(); i++)
-{
-    std::cout << "Target: " << targets[i] << " ";
-    std::cout << "Features: ";
-    for (int j = 0; j < features[i].size(); j++)
-    {
-        std::cout << features[i][j] << " ";
-    }
-    std::cout << "\n";
-}
-std::cout << std::endl; 
-#endif // DEBUG
-
-
 TEST_CASE("Perceptron AND gate", "[perceptron]")
 {
-    // Create a perceptron object
     Perceptron andGate(WEIGHTS, BIAS, LEARNING_RATE);
     std::vector<std::vector<float>> inputs = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
     std::vector<int> targets = {0, 0, 0, 1};
@@ -137,12 +119,19 @@ TEST_CASE("Iris data set - Perceptron (Setosa en Versicolor)", "[Perceptron Iris
     irisPerceptron.__str__(1);
     std::cout << "Loss: " << loss << "\n" << std::endl;
 
+    std::vector<int> predictions;
+    std::vector<int> targets;
+
     for (int i = 0; i < iris01.features.size(); i++)
     {
         int prediction = irisPerceptron.predict(iris01.features[i]);
         int target = iris01.targets[i];
-        // CHECK(prediction == target);
+        predictions.push_back(prediction);
+        targets.push_back(target);
     }
+
+    CHECK(predictions == targets);
+
     // Training the perceptron on the iris data set
     // ------------------------------------------------
     // Training the perceptron on the Setosa and Versicolor
@@ -184,12 +173,19 @@ TEST_CASE("Iris data set - Perceptron (Versicolor en Virginica)", "[Perceptron I
     irisPerceptron.__str__(1);
     std::cout << "Loss: " << loss << "\n" << std::endl;
 
+    std::vector<int> predictions;
+    std::vector<int> targets;
+
     for (int i = 0; i < iris12.features.size(); i++)
     {
         int prediction = irisPerceptron.predict(iris12.features[i]);
         int target = iris12.targets[i];
-        // CHECK(prediction == target);
+        predictions.push_back(prediction);
+        targets.push_back(target);
     }
+
+    CHECK(predictions == targets);
+
     // Training the perceptron on the Versicolor and Virginica
     // weights:
     // 32939.9 14870.2 27760 10130.2 
