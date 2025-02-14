@@ -51,6 +51,7 @@ double Perceptron::loss(const std::vector<std::vector<float>>& inputs, const std
 {
     // Get the predictions for the inputs
     std::vector<int> predictions;
+    predictions.reserve(inputs.size());
     for (int i = 0; i < inputs.size(); i++) {
         predictions.push_back(predict(inputs[i]));
     }
