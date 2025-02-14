@@ -15,7 +15,6 @@
 
 /**
  * @brief Calculates the mean squared error between two vectors.
- * MSE = Σ | d – y |2 / n
  *  
  * This function computes the mean squared error (MSE) between the target values
  * and the predicted values. The MSE is a measure of the average squared difference

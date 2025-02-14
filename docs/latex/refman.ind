@@ -1,0 +1,121 @@
+\begin{theindex}
+
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/importing\_dataset.py}, 
+		\hyperpage{11}
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/header/MSE.hpp}, 
+		\hyperpage{16}, \hyperpage{18}
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/header/csv\_reader.hpp}, 
+		\hyperpage{12}, \hyperpage{15}
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/header/perceptron.hpp}, 
+		\hyperpage{19, 20}
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/perceptron.cpp}, 
+		\hyperpage{21, 22}
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/test/test.cpp}, 
+		\hyperpage{22}, \hyperpage{27}
+  \item {\_\_str\_\_}
+    \subitem {Perceptron}, \hyperpage{9}
+
+  \indexspace
+
+  \item {BIAS}
+    \subitem {test.cpp}, \hyperpage{24}
+
+  \indexspace
+
+  \item {CATCH\_CONFIG\_MAIN}
+    \subitem {test.cpp}, \hyperpage{24}
+  \item {csv\_reader.hpp}
+    \subitem {filter\_data}, \hyperpage{14}
+    \subitem {get\_features}, \hyperpage{14}
+    \subitem {get\_targets}, \hyperpage{14}
+    \subitem {read\_csv}, \hyperpage{15}
+
+  \indexspace
+
+  \item {data}
+    \subitem {test.cpp}, \hyperpage{26}
+
+  \indexspace
+
+  \item {features}
+    \subitem {irisData}, \hyperpage{7}
+    \subitem {test.cpp}, \hyperpage{26}
+  \item {filter\_data}
+    \subitem {csv\_reader.hpp}, \hyperpage{14}
+
+  \indexspace
+
+  \item {get\_features}
+    \subitem {csv\_reader.hpp}, \hyperpage{14}
+  \item {get\_targets}
+    \subitem {csv\_reader.hpp}, \hyperpage{14}
+
+  \indexspace
+
+  \item {importing\_dataset.py}
+    \subitem {iris}, \hyperpage{11}
+  \item {iris}
+    \subitem {importing\_dataset.py}, \hyperpage{11}
+  \item {irisData}, \hyperpage{7}
+    \subitem {features}, \hyperpage{7}
+    \subitem {targets}, \hyperpage{7}
+
+  \indexspace
+
+  \item {LEARNING\_RATE}
+    \subitem {test.cpp}, \hyperpage{25}
+  \item {loss}
+    \subitem {Perceptron}, \hyperpage{9}
+
+  \indexspace
+
+  \item {ML-\/Perceptron-\/learning-\/rule}, \hyperpage{1}
+  \item {MSE}
+    \subitem {MSE.hpp}, \hyperpage{18}
+  \item {MSE.hpp}
+    \subitem {MSE}, \hyperpage{18}
+
+  \indexspace
+
+  \item {Perceptron}, \hyperpage{8}
+    \subitem {\_\_str\_\_}, \hyperpage{9}
+    \subitem {loss}, \hyperpage{9}
+    \subitem {Perceptron}, \hyperpage{8}
+    \subitem {predict}, \hyperpage{9}
+    \subitem {update}, \hyperpage{10}
+  \item {predict}
+    \subitem {Perceptron}, \hyperpage{9}
+
+  \indexspace
+
+  \item {read\_csv}
+    \subitem {csv\_reader.hpp}, \hyperpage{15}
+
+  \indexspace
+
+  \item {targets}
+    \subitem {irisData}, \hyperpage{7}
+    \subitem {test.cpp}, \hyperpage{26}
+  \item {test.cpp}
+    \subitem {BIAS}, \hyperpage{24}
+    \subitem {CATCH\_CONFIG\_MAIN}, \hyperpage{24}
+    \subitem {data}, \hyperpage{26}
+    \subitem {features}, \hyperpage{26}
+    \subitem {LEARNING\_RATE}, \hyperpage{25}
+    \subitem {targets}, \hyperpage{26}
+    \subitem {TEST\_CASE}, \hyperpage{25, 26}
+    \subitem {WEIGHTS}, \hyperpage{25}
+  \item {TEST\_CASE}
+    \subitem {test.cpp}, \hyperpage{25, 26}
+
+  \indexspace
+
+  \item {update}
+    \subitem {Perceptron}, \hyperpage{10}
+
+  \indexspace
+
+  \item {WEIGHTS}
+    \subitem {test.cpp}, \hyperpage{25}
+
+\end{theindex}

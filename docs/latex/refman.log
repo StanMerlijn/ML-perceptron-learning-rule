@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.2.3)  14 FEB 2025 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.2.3)  14 FEB 2025 19:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -709,12 +709,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 
 Package backref Info: ** backref set up for natbib ** on input line 209.
 Package hyperref Info: Link coloring ON on input line 209.
+(refman.out) (refman.out)
 \@outlinefile=\write5
 \openout5 = `refman.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-No file refman.toc.
+\Etoc@tf=\read4
 Package hyperref Info: Option `pageanchor' set `false' on input line 217.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 217.
 Package hyperref Info: Option `unicode' set `true' on input line 217.
@@ -723,7 +724,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.29996pt on input line 222.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 222.
-(/Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
+ (/Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 222.
@@ -749,6 +750,30 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 \tf@toc=\write6
 \openout6 = `refman.toc'.
 
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 231.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 231.
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--231
+ [][] [][]\T1/phv/m/n/10 5.3 /[]Users/stanislav/[]Github/[]Machine[]Learning/[]ML-perceptron-learning-rule/src/header/csv[]_[]reader.hpp 
+ []
+
+
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 231--231
+ [][] [][]\T1/phv/m/n/10 5.7 /[]Users/stanislav/[]Github/[]Machine[]Learning/[]ML-perceptron-learning-rule/src/header/perceptron.hpp 
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 231.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 231.
+(/Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+
+[2]
 Package hyperref Info: Option `pageanchor' set `true' on input line 234.
  (index.tex
 Chapter 1.
@@ -759,16 +784,9 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 5.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 9.
-(/Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-))
+)
 
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 237.
 [1
 
 
@@ -778,14 +796,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
 ]
 Chapter 2.
-(annotated.tex
-
-LaTeX Warning: Reference `structiris_data' on page 3 undefined on input line 3.
-
-
-LaTeX Warning: Reference `class_perceptron' on page 3 undefined on input line 4.
-
-)
+(annotated.tex)
 
 [3]
 
@@ -793,26 +804,7 @@ LaTeX Warning: Reference `class_perceptron' on page 3 undefined on input line 4.
 
 ]
 Chapter 3.
-(files.tex
-
-LaTeX Warning: Reference `importing__dataset_8py' on page 5 undefined on input line 3.
-
-
-LaTeX Warning: Reference `perceptron_8cpp' on page 5 undefined on input line 4.
-
-
-LaTeX Warning: Reference `csv__reader_8hpp' on page 5 undefined on input line 5.
-
-
-LaTeX Warning: Reference `_m_s_e_8hpp' on page 5 undefined on input line 6.
-
-
-LaTeX Warning: Reference `perceptron_8hpp' on page 5 undefined on input line 7.
-
-
-LaTeX Warning: Reference `test_8cpp' on page 5 undefined on input line 8.
-
-)
+(files.tex)
 
 [5]
 
@@ -829,8 +821,6 @@ LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 15.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 21.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 38.
 ) (class_perceptron.tex
 
 [7]
@@ -847,19 +837,6 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 
 
 [8]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.1 on input line 53.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.2 on input line 75.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.3 on input line 96.
-
-
 Underfull \hbox (badness 10000) detected at line 97
 [][][]
  []
@@ -867,18 +844,9 @@ Underfull \hbox (badness 10000) detected at line 97
 
 
 [9]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.4 on input line 118.
-
-
 Underfull \hbox (badness 10000) detected at line 119
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.5 on input line 144.
 
 )
 
@@ -889,13 +857,13 @@ Chapter 5.
 [11
 
 ] <./csv__reader_8hpp__incl.pdf>
-<csv__reader_8hpp__incl.pdf, id=190, 390.45876pt x 188.705pt>
+<csv__reader_8hpp__incl.pdf, id=515, 390.45876pt x 188.705pt>
 File: csv__reader_8hpp__incl.pdf Graphic file (type pdf)
 <use csv__reader_8hpp__incl.pdf>
 Package pdftex.def Info: csv__reader_8hpp__incl.pdf  used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 169.15913pt.
  <./csv__reader_8hpp__dep__incl.pdf>
-<csv__reader_8hpp__dep__incl.pdf, id=198, 238.8925pt x 211.79124pt>
+<csv__reader_8hpp__dep__incl.pdf, id=523, 238.8925pt x 211.79124pt>
 File: csv__reader_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use csv__reader_8hpp__dep__incl.pdf>
 Package pdftex.def Info: csv__reader_8hpp__dep__incl.pdf  used on input line 24.
@@ -932,18 +900,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
 
 [13]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.1 on input line 87.
-
-
 Underfull \hbox (badness 10000) detected at line 88
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.2 on input line 111.
 
 
 Underfull \hbox (badness 10000) detected at line 112
@@ -953,11 +912,6 @@ Underfull \hbox (badness 10000) detected at line 112
 
 
 [14]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.3 on input line 135.
-
-
 Underfull \hbox (badness 10000) detected at line 136
 [][][]
  []
@@ -966,11 +920,6 @@ LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 14
 (/Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.4 on input line 161.
-
-
 Underfull \hbox (badness 10000) detected at line 162
 [][][]
  []
@@ -978,7 +927,7 @@ Underfull \hbox (badness 10000) detected at line 162
 ) (csv__reader_8hpp_source.tex
 
 [15]) (_m_s_e_8hpp.tex <./_m_s_e_8hpp__incl.pdf>
-<_m_s_e_8hpp__incl.pdf, id=315, 255.95625pt x 177.66376pt>
+<_m_s_e_8hpp__incl.pdf, id=632, 255.95625pt x 177.66376pt>
 File: _m_s_e_8hpp__incl.pdf Graphic file (type pdf)
 <use _m_s_e_8hpp__incl.pdf>
 Package pdftex.def Info: _m_s_e_8hpp__incl.pdf  used on input line 15.
@@ -986,25 +935,11 @@ Package pdftex.def Info: _m_s_e_8hpp__incl.pdf  used on input line 15.
 
 
 [16] <./_m_s_e_8hpp__dep__incl.pdf>
-<_m_s_e_8hpp__dep__incl.pdf, id=384, 415.5525pt x 278.03876pt>
+<_m_s_e_8hpp__dep__incl.pdf, id=700, 415.5525pt x 278.03876pt>
 File: _m_s_e_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use _m_s_e_8hpp__dep__incl.pdf>
 Package pdftex.def Info: _m_s_e_8hpp__dep__incl.pdf  used on input line 22.
 (pdftex.def)             Requested size: 350.0pt x 234.18733pt.
-
-
-_m_s_e_8hpp.tex:29: LaTeX Error: Unicode character ^^ce^^a3 (U+03A3)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 ... error between two vectors. MSE = ^^ce^^a3
-                                                   \texorpdfstring{$\vert$}{...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
 
 Underfull \hbox (badness 10000) detected at line 35
 [][][]
@@ -1035,23 +970,6 @@ Underfull \hbox (badness 10000) detected at line 44
  []
 
 
-_m_s_e_8hpp.tex:62: LaTeX Error: Unicode character ^^ce^^a3 (U+03A3)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 ... error between two vectors. MSE = ^^ce^^a3
-                                                   \texorpdfstring{$\vert$}{...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.5 on input line 72.
-
-
 Underfull \hbox (badness 10000) detected at line 73
 [][][]
  []
@@ -1059,13 +977,13 @@ Underfull \hbox (badness 10000) detected at line 73
 ) (_m_s_e_8hpp_source.tex) (perceptron_8hpp.tex
 
 [18] <./perceptron_8hpp__incl.pdf>
-<perceptron_8hpp__incl.pdf, id=440, 269.005pt x 232.87pt>
+<perceptron_8hpp__incl.pdf, id=749, 269.005pt x 232.87pt>
 File: perceptron_8hpp__incl.pdf Graphic file (type pdf)
 <use perceptron_8hpp__incl.pdf>
 Package pdftex.def Info: perceptron_8hpp__incl.pdf  used on input line 15.
 (pdftex.def)             Requested size: 268.0pt x 232.0024pt.
  <./perceptron_8hpp__dep__incl.pdf>
-<perceptron_8hpp__dep__incl.pdf, id=448, 415.5525pt x 200.75pt>
+<perceptron_8hpp__dep__incl.pdf, id=757, 415.5525pt x 200.75pt>
 File: perceptron_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use perceptron_8hpp__dep__incl.pdf>
 Package pdftex.def Info: perceptron_8hpp__dep__incl.pdf  used on input line 22.
@@ -1100,7 +1018,7 @@ Underfull \hbox (badness 10000) detected at line 44
  []
 
 ) (perceptron_8hpp_source.tex) (perceptron_8cpp.tex <./perceptron_8cpp__incl.pdf>
-<perceptron_8cpp__incl.pdf, id=478, 255.95625pt x 289.08pt>
+<perceptron_8cpp__incl.pdf, id=786, 255.95625pt x 289.08pt>
 File: perceptron_8cpp__incl.pdf Graphic file (type pdf)
 <use perceptron_8cpp__incl.pdf>
 Package pdftex.def Info: perceptron_8cpp__incl.pdf  used on input line 13.
@@ -1137,7 +1055,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
 
 [21]) (test_8cpp.tex <./test_8cpp__incl.pdf>
-<test_8cpp__incl.pdf, id=540, 451.6875pt x 289.08pt>
+<test_8cpp__incl.pdf, id=845, 451.6875pt x 289.08pt>
 File: test_8cpp__incl.pdf Graphic file (type pdf)
 <use test_8cpp__incl.pdf>
 Package pdftex.def Info: test_8cpp__incl.pdf  used on input line 18.
@@ -1190,44 +1108,46 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
 [30
 
-]
-No file refman.ind.
+] (refman.ind
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 1.
 
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
+Underfull \hbox (badness 2753) in paragraph at lines 7--9
+\T1/phv/m/n/10 learning-rule/src/header/csv_reader.hpp, [][]12[][],
+ []
 
-(refman.aux)
+
+Underfull \hbox (badness 4582) in paragraph at lines 9--11
+\T1/phv/m/n/10 learning-rule/src/header/perceptron.hpp, [][]19[][],
+ []
+
+
+
+
+
+[31
+
+
+]) (refman.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `refman.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `refman.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0F34AAAF1253855A0EE2D5E7E643AB77;14627.
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: B55BA1DF8856C7E59EBB4210E9534A62;14698.
  ) 
 Here is how much of TeX's memory you used:
- 18891 strings out of 473530
- 320050 string characters out of 5704182
- 720136 words of memory out of 5000000
- 41182 multiletter control sequences out of 15000+600000
- 615756 words of font info for 113 fonts, out of 8000000 for 9000
+ 18958 strings out of 473530
+ 321533 string characters out of 5704182
+ 729374 words of memory out of 5000000
+ 41248 multiletter control sequences out of 15000+600000
+ 615728 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,16n,117p,803b,750s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc}</Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrb8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrro8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8ac.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (32 pages, 388183 bytes).
+ 101i,16n,117p,776b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc}</Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrb8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrro8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8ac.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (35 pages, 426994 bytes).
 PDF statistics:
- 1164 PDF objects out of 1200 (max. 8388607)
- 572 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1501 PDF objects out of 1728 (max. 8388607)
+ 571 named destinations out of 1000 (max. 500000)
+ 577 words of extra memory for PDF output out of 10000 (max. 10000000)
 
