@@ -18,7 +18,6 @@
 #include <vector>
 #include <cstdlib>   // For rand()
 
-
 /**
  * @file test.cpp
  * @brief Unit tests for the Perceptron, PerceptronLayer and PerceptronNetwork classes.
@@ -113,30 +112,28 @@ TEST_CASE("Perceptron XOR gate", "[Perceptron XOR]")
     // Calculate the loss
     double loss = xorGate.loss(inputs, targets);
     std::cout << "Loss: " << loss << "\n" << std::endl;
+    
+    // FAILED:
+    //   REQUIRE( xorGate.predict({0, 0}) == 0 )
+    // with expansion:
+    //   1 == 0
+
+    // FAILED:
+    //   REQUIRE( xorGate.predict({1, 0}) == 1 )
+    // with expansion:
+    //   0 == 1
+
+    // weights:
+    // -0.1 2.77556e-17 
+    // bias = 2.77556e-17
+    // Learning rate = 0.1
+    // Loss: 0.5
+
+    // A XOR gate is a linearly inseparable function, which means that a single perceptron
+    // cannot learn the weights to create a XOR gate.
 }
 
 
-// Perceptron XOR gate
-// -------------------------------------------------------------------------------
-
-// FAILED:
-//   REQUIRE( xorGate.predict({0, 0}) == 0 )
-// with expansion:
-//   1 == 0
-
-// FAILED:
-//   REQUIRE( xorGate.predict({1, 0}) == 1 )
-// with expansion:
-//   0 == 1
-
-// weights:
-// -0.1 2.77556e-17 
-// bias = 2.77556e-17
-// Learning rate = 0.1
-// Loss: 0.5
-
-// A XOR gate is a linearly inseparable function, which means that a single perceptron
-// cannot learn the weights to create a XOR gate.
 
 /**
  * @brief Test case for the Iris data set (Setosa vs Versicolor) using the Perceptron model.

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['learning_20rule_0',['ML-Perceptron-learning-rule',['../index.html',1,'']]],
-  ['learning_5frate_1',['LEARNING_RATE',['../test_8cpp.html#ac9d3b34ee7e35eab6a81ed21f18f6e64',1,'test.cpp']]],
-  ['loss_2',['loss',['../class_perceptron.html#ac489510834318a52fa05291f0a38f34c',1,'Perceptron']]]
+  ['importing_5fdataset_2epy_0',['importing_dataset.py',['../importing__dataset_8py.html',1,'']]],
+  ['installing_1',['Installing',['../index.html#autotoc_md4',1,'']]],
+  ['introduction_2',['Introduction',['../index.html#autotoc_md2',1,'']]],
+  ['irisdata_3',['irisData',['../structiris_data.html',1,'']]]
 ];

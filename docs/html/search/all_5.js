@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['importing_5fdataset_2epy_0',['importing_dataset.py',['../importing__dataset_8py.html',1,'']]],
-  ['installing_1',['Installing',['../index.html#autotoc_md3',1,'']]],
-  ['introduction_2',['Introduction',['../index.html#autotoc_md2',1,'']]],
-  ['irisdata_3',['irisData',['../structiris_data.html',1,'']]]
+  ['get_5ffeatures_0',['get_features',['../csv__reader_8hpp.html#a2047e21ff752eb3beebc7a9ac70cddff',1,'csv_reader.hpp']]],
+  ['get_5ftargets_1',['get_targets',['../csv__reader_8hpp.html#a38677660229fcf0600b2eeec45e96158',1,'csv_reader.hpp']]]
 ];

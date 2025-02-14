@@ -207,6 +207,9 @@ INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/lat
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT ./refman.aux
+INPUT ./refman.aux
+INPUT refman.aux
 OUTPUT refman.aux
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
@@ -258,6 +261,7 @@ INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/lat
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
@@ -267,6 +271,8 @@ INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/v
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/courier/pcrr8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/courier/pcrr8t.vf
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
@@ -291,7 +297,6 @@ INPUT ./structiris_data.tex
 INPUT ./structiris_data.tex
 INPUT ./structiris_data.tex
 INPUT structiris_data.tex
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1phv.fd
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1phv.fd
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1phv.fd
@@ -318,8 +323,6 @@ INPUT ./class_perceptron.tex
 INPUT ./class_perceptron.tex
 INPUT ./class_perceptron.tex
 INPUT class_perceptron.tex
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/courier/pcrr8t.vf
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8c.vf
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm

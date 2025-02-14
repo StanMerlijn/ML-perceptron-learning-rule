@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weights_0',['WEIGHTS',['../test_8cpp.html#a07a9fe2f5b86d10f7d7106b2c5484d97',1,'test.cpp']]]
+  ['update_0',['update',['../class_perceptron.html#a500dc3aaba030166b4b57a72922a8378',1,'Perceptron']]]
 ];

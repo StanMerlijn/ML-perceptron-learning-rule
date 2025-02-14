@@ -59,10 +59,10 @@
 \DoxyCodeLine{\Hypertarget{test_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{comment}{//\ Train\ the\ perceptron}}
 \DoxyCodeLine{\Hypertarget{test_8cpp_source_l00102}00102\ \ \ \ \ xorGate.\mbox{\hyperlink{class_perceptron_a500dc3aaba030166b4b57a72922a8378}{update}}(inputs,\ targets,\ 100);}
 \DoxyCodeLine{\Hypertarget{test_8cpp_source_l00103}00103\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00104}00104\ \ \ \ \ REQUIRE\_FALSE(xorGate.\mbox{\hyperlink{class_perceptron_a3f2ed0bfcf45a37c23e25f544fd9f2ce}{predict}}(\{0,\ 0\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00105}00105\ \ \ \ \ REQUIRE(xorGate.\mbox{\hyperlink{class_perceptron_a3f2ed0bfcf45a37c23e25f544fd9f2ce}{predict}}(\{0,\ 1\})\ ==\ 1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00106}00106\ \ \ \ \ REQUIRE\_FALSE(xorGate.\mbox{\hyperlink{class_perceptron_a3f2ed0bfcf45a37c23e25f544fd9f2ce}{predict}}(\{1,\ 0\})\ ==\ 1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00107}00107\ \ \ \ \ REQUIRE(xorGate.\mbox{\hyperlink{class_perceptron_a3f2ed0bfcf45a37c23e25f544fd9f2ce}{predict}}(\{1,\ 1\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00104}00104\ \ \ \ \ REQUIRE\_FALSE(xorGate.\mbox{\hyperlink{class_perceptron_a3f2ed0bfcf45a37c23e25f544fd9f2ce}{predict}}(\{0,\ 0\})\ ==\ 0);\ \textcolor{comment}{//\ This\ should\ fail\ for\ XOR}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00105}00105\ \ \ \ \ REQUIRE(xorGate.\mbox{\hyperlink{class_perceptron_a3f2ed0bfcf45a37c23e25f544fd9f2ce}{predict}}(\{0,\ 1\})\ ==\ 1);\ \textcolor{comment}{//\ This\ should\ pass}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00106}00106\ \ \ \ \ REQUIRE\_FALSE(xorGate.\mbox{\hyperlink{class_perceptron_a3f2ed0bfcf45a37c23e25f544fd9f2ce}{predict}}(\{1,\ 0\})\ ==\ 1);\ \textcolor{comment}{//\ This\ should\ fail\ for\ XOR}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00107}00107\ \ \ \ \ REQUIRE(xorGate.\mbox{\hyperlink{class_perceptron_a3f2ed0bfcf45a37c23e25f544fd9f2ce}{predict}}(\{1,\ 1\})\ ==\ 0);\ \textcolor{comment}{//\ This\ should\ pass}}
 \DoxyCodeLine{\Hypertarget{test_8cpp_source_l00108}00108\ }
 \DoxyCodeLine{\Hypertarget{test_8cpp_source_l00109}00109\ \ \ \ \ \textcolor{comment}{//\ Print\ the\ weights}}
 \DoxyCodeLine{\Hypertarget{test_8cpp_source_l00110}00110\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Training\ for\ the\ XOR\ gate:\(\backslash\)n"{}};}

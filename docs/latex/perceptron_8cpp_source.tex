@@ -49,21 +49,22 @@
 \DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ inputs.size();\ i++)\ \{}
 \DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ predictions.push\_back(\mbox{\hyperlink{class_perceptron_a3f2ed0bfcf45a37c23e25f544fd9f2ce}{predict}}(inputs[i]));}
 \DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00056}00056\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_m_s_e_8hpp_a0e4e2ce9121d7f51ccc0d354270b1647}{MSE}}(targets,\ predictions);}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00058}00058\ \}}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00059}00059\ }
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00060}\mbox{\hyperlink{class_perceptron_aded865cff86e00ce42a97125bb66b5ae}{00060}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_perceptron_aded865cff86e00ce42a97125bb66b5ae}{Perceptron::\_\_str\_\_}}(\textcolor{keywordtype}{int}\ verbose)\textcolor{keyword}{\ const}}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00061}00061\ \textcolor{keyword}{}\{}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00062}00062\ \ \ \ \ \textcolor{comment}{//\ Printing\ the\ weights\ }}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00063}00063\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}weights\ for\ the\ perceptron:\(\backslash\)n"{}};}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00064}00064\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ weights.size();\ i++)\ \{}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ std::cout\ <<\ weights[i]\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00066}00066\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{comment}{//\ Other\ info\ }}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00068}00068\ \ \ \ \ \textcolor{keywordflow}{if}\ (verbose\ >=\ 1)\ \{}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nbias\ =\ "{}}\ <<\ bias\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Learning\ rate\ =\ "{}}\ <<\ learningRate\ <<\ std::endl;}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00071}00071\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00072}00072\ \}}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{comment}{//\ Calculate\ the\ mean\ squared\ error\ between\ the\ targets\ and\ predictions}}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00058}00058\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_m_s_e_8hpp_a0e4e2ce9121d7f51ccc0d354270b1647}{MSE}}(targets,\ predictions);}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00059}00059\ \}}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00061}\mbox{\hyperlink{class_perceptron_aded865cff86e00ce42a97125bb66b5ae}{00061}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_perceptron_aded865cff86e00ce42a97125bb66b5ae}{Perceptron::\_\_str\_\_}}(\textcolor{keywordtype}{int}\ verbose)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00062}00062\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00063}00063\ \ \ \ \ \textcolor{comment}{//\ Printing\ the\ weights\ }}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00064}00064\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}weights\ for\ the\ perceptron:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00065}00065\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ weights.size();\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ std::cout\ <<\ weights[i]\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00067}00067\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00068}00068\ \ \ \ \ \textcolor{comment}{//\ Other\ info\ }}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00069}00069\ \ \ \ \ \textcolor{keywordflow}{if}\ (verbose\ >=\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nbias\ =\ "{}}\ <<\ bias\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Learning\ rate\ =\ "{}}\ <<\ learningRate\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00072}00072\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{perceptron_8cpp_source_l00073}00073\ \}}
 
 \end{DoxyCode}

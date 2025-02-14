@@ -2,7 +2,8 @@
 \contentsline {chapter}{\numberline {1}ML-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Perceptron-\/learning-\/rule}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Student}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Introduction}{1}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Installing}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Documentation}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Installing}{1}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
 \contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
