@@ -1,0 +1,88 @@
+\doxysection{csv\+\_\+reader.\+hpp}
+\hypertarget{csv__reader_8hpp_source}{}\label{csv__reader_8hpp_source}\index{/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/header/csv\_reader.hpp@{/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/header/csv\_reader.hpp}}
+\mbox{\hyperlink{csv__reader_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00011}00011\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00018}\mbox{\hyperlink{structiris_data}{00018}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structiris_data}{irisData}}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00026}00026\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00027}00027\ \ \ \ \ std::vector<std::vector<float>>\ features;\ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00028}00028\ \ \ \ \ std::vector<int>\ targets;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00029}00029\ \};}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00042}\mbox{\hyperlink{csv__reader_8hpp_a38550954af601075a26826f7a3468e44}{00042}}\ std::vector<std::vector<std::string>>\ \mbox{\hyperlink{csv__reader_8hpp_a38550954af601075a26826f7a3468e44}{read\_csv}}(\textcolor{keyword}{const}\ std::string\&\ filename,\ \textcolor{keywordtype}{char}\ delimiter=\textcolor{charliteral}{','})}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00043}00043\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00044}00044\ \ \ \ \ \textcolor{comment}{//\ Create\ a\ vector\ to\ store\ the\ rows}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00045}00045\ \ \ \ \ std::vector<std::vector<std::string>>\ rows;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00046}00046\ \ \ \ \ std::ifstream\ file(filename);}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00048}00048\ \ \ \ \ \textcolor{comment}{//\ Check\ if\ the\ file\ is\ open}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00049}00049\ \ \ \ \ \textcolor{keywordflow}{if}\ (!file.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00050}00050\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ Could\ not\ open\ file\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rows;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00052}00052\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00053}00053\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00054}00054\ \ \ \ \ \textcolor{comment}{//\ Read\ the\ file\ line\ by\ line}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00055}00055\ \ \ \ \ std::string\ line;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00056}00056\ \ \ \ \ \textcolor{keywordflow}{while}\ (std::getline(file,\ line))\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00057}00057\ \ \ \ \ \ \ \ \ std::stringstream\ ss(line);}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00058}00058\ \ \ \ \ \ \ \ \ std::vector<std::string>\ cols;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00059}00059\ \ \ \ \ \ \ \ \ std::string\ col;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (std::getline(ss,\ col,\ delimiter))\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ cols.push\_back(col);}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Add\ the\ columns\ to\ the\ rows}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00066}00066\ \ \ \ \ \ \ \ \ rows.push\_back(cols);}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00067}00067\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00069}00069\ \ \ \ \ \textcolor{comment}{//\ Close\ the\ file}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00070}00070\ \ \ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00072}00072\ \ \ \ \ \textcolor{keywordflow}{return}\ rows;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00073}00073\ \}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00084}\mbox{\hyperlink{csv__reader_8hpp_a38677660229fcf0600b2eeec45e96158}{00084}}\ std::vector<int>\ \mbox{\hyperlink{csv__reader_8hpp_a38677660229fcf0600b2eeec45e96158}{get\_targets}}(\textcolor{keyword}{const}\ std::vector<std::vector<std::string>>\&\ data)}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00085}00085\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00086}00086\ \ \ \ \ std::vector<int>\ targets;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00087}00087\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ row\ :\ data)\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00088}00088\ \ \ \ \ \ \ \ \ targets.push\_back(std::stoi(row.back()));}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00089}00089\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00090}00090\ \ \ \ \ \textcolor{keywordflow}{return}\ targets;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00091}00091\ \}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00102}\mbox{\hyperlink{csv__reader_8hpp_a2047e21ff752eb3beebc7a9ac70cddff}{00102}}\ std::vector<std::vector<float>>\ \mbox{\hyperlink{csv__reader_8hpp_a2047e21ff752eb3beebc7a9ac70cddff}{get\_features}}(\textcolor{keyword}{const}\ std::vector<std::vector<std::string>>\&\ data)}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00103}00103\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00104}00104\ \ \ \ \ std::vector<std::vector<float>>\ features;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00105}00105\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ row\ :\ data)\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00106}00106\ \ \ \ \ \ \ \ \ std::vector<float>\ feature\_row;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00107}00107\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Skip\ the\ last\ column\ which\ contains\ the\ target}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00108}00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ row.size()\ -\/\ 1;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ feature\_row.push\_back(std::stof(row[i]));}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00110}00110\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00111}00111\ \ \ \ \ \ \ \ \ features.push\_back(feature\_row);}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00112}00112\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00113}00113\ \ \ \ \ \textcolor{keywordflow}{return}\ features;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00114}00114\ \}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00128}\mbox{\hyperlink{csv__reader_8hpp_a74d85f63c51f8f56f4cdb0be52bfbe34}{00128}}\ \mbox{\hyperlink{structiris_data}{irisData}}\ \mbox{\hyperlink{csv__reader_8hpp_a74d85f63c51f8f56f4cdb0be52bfbe34}{filter\_data}}(\textcolor{keyword}{const}\ std::vector<std::vector<float>>\&\ features,\ \textcolor{keyword}{const}\ std::vector<int>\&\ targets,\ \textcolor{keywordtype}{int}\ target)}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00129}00129\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00130}00130\ \ \ \ \ std::vector<std::vector<float>>\ filtered\_features;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00131}00131\ \ \ \ \ std::vector<int>\ filtered\_targets;}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00132}00132\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ features.size();\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00133}00133\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (targets[i]\ !=\ target)\ \{}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00134}00134\ \ \ \ \ \ \ \ \ \ \ \ \ filtered\_features.push\_back(features[i]);}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ filtered\_targets.push\_back(targets[i]);}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00136}00136\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00137}00137\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00138}00138\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{structiris_data}{irisData}}\{filtered\_features,\ filtered\_targets\};}
+\DoxyCodeLine{\Hypertarget{csv__reader_8hpp_source_l00139}00139\ \}}
+
+\end{DoxyCode}

@@ -1,3 +1,13 @@
+/**
+ * @file csv_reader.hpp
+ * @author Stan Merlijn
+ * @brief In this class the CSV reader is defined. This is for reading the iris data set.
+ * @version 0.1
+ * @date 2025-02-14
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #pragma once
 #include <fstream>
 #include <iostream>
@@ -5,10 +15,16 @@
 #include <string>
 #include <vector>
 
-
 struct irisData
+/**
+ * @brief A structure to hold the features and targets read from a CSV file. This is fdor the iris data set.
+ * 
+ * This structure contains two members:
+ * - features: A 2D vector of floats where each inner vector represents a set of features for a single data point.
+ * - targets: A vector of integers where each element represents the target value corresponding to the features.
+ */
 {
-    std::vector<std::vector<float>> features;
+    std::vector<std::vector<float>> features; 
     std::vector<int> targets;
 };
 
@@ -23,7 +39,6 @@ struct irisData
  * @param delimiter The delimiter used in the CSV file.
  * @return A vector of vectors representing the rows in the CSV file.
  */
-
 std::vector<std::vector<std::string>> read_csv(const std::string& filename, char delimiter=',')
 {
     // Create a vector to store the rows
@@ -58,7 +73,7 @@ std::vector<std::vector<std::string>> read_csv(const std::string& filename, char
 }
 
 /**
- * @brief Extracts the features from the data.
+ * @brief Extracts the features from the data (column).
  * 
  * This function extracts the features from the data and returns
  * a vector of vectors containing the features.
@@ -66,7 +81,6 @@ std::vector<std::vector<std::string>> read_csv(const std::string& filename, char
  * @param data A vector of vectors representing the rows in the CSV file.
  * @return A vector containing the features.
  */
-
 std::vector<int> get_targets(const std::vector<std::vector<std::string>>& data)
 {
     std::vector<int> targets;
@@ -85,7 +99,6 @@ std::vector<int> get_targets(const std::vector<std::vector<std::string>>& data)
  * @param data A vector of vectors representing the rows in the CSV file.
  * @return A vector containing the features.
  */
-
 std::vector<std::vector<float>> get_features(const std::vector<std::vector<std::string>>& data)
 {
     std::vector<std::vector<float>> features;
@@ -112,7 +125,6 @@ std::vector<std::vector<float>> get_features(const std::vector<std::vector<std::
  * @param target The target value to filter out from the data.
  * @return irisData A structure containing the filtered feature data and target values.
  */
-
 irisData filter_data(const std::vector<std::vector<float>>& features, const std::vector<int>& targets, int target)
 {
     std::vector<std::vector<float>> filtered_features;

@@ -1,3 +1,13 @@
+/**
+ * @file perceptron.cpp
+ * @author Stan Merlijn
+ * @brief In this file the Perceptron class is implemented. 
+ * @version 0.1
+ * @date 2025-02-14
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #include "header/perceptron.hpp"
 
 Perceptron::Perceptron(std::vector<double> weights, double bias, double learningRate)
@@ -44,6 +54,7 @@ double Perceptron::loss(const std::vector<std::vector<float>>& inputs, const std
     for (int i = 0; i < inputs.size(); i++) {
         predictions.push_back(predict(inputs[i]));
     }
+    // Calculate the mean squared error between the targets and predictions
     return MSE(targets, predictions);
 }
 

@@ -1,0 +1,24 @@
+\doxysection{MSE.\+hpp}
+\hypertarget{_m_s_e_8hpp_source}{}\label{_m_s_e_8hpp_source}\index{/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/header/MSE.hpp@{/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/header/MSE.hpp}}
+\mbox{\hyperlink{_m_s_e_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00011}00011\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00029}\mbox{\hyperlink{_m_s_e_8hpp_a0e4e2ce9121d7f51ccc0d354270b1647}{00029}}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{_m_s_e_8hpp_a0e4e2ce9121d7f51ccc0d354270b1647}{MSE}}(\textcolor{keyword}{const}\ std::vector<int>\&\ targets,\ \textcolor{keyword}{const}\ std::vector<int>\&\ predictions)\ }
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00030}00030\ \{\ \ \ }
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00031}00031\ \ \ \ \ \textcolor{comment}{//\ Ensure\ both\ arrays\ are\ the\ same\ size}}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00032}00032\ \ \ \ \ \textcolor{keywordflow}{if}\ (targets.size()\ !=\ predictions.size())\ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00034}00034\ \ \ \ \ \textcolor{comment}{//\ Calculate\ the\ mean\ squared\ error}}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00035}00035\ \ \ \ \ \textcolor{keywordtype}{double}\ sum\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00036}00036\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ targets.size();\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00037}00037\ \ \ \ \ \ \ \ \ sum\ +=\ pow(std::abs(targets[i]\ -\/\ predictions[i]),\ 2);}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00038}00038\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00039}00039\ \ \ \ \ \textcolor{keywordflow}{return}\ sum\ /\ targets.size();}
+\DoxyCodeLine{\Hypertarget{_m_s_e_8hpp_source_l00040}00040\ \}}
+
+\end{DoxyCode}

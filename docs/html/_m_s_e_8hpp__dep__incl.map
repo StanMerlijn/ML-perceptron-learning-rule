@@ -1,0 +1,9 @@
+<map id="/Users/stanislav/Github/MachineLearning/ML&#45;perceptron&#45;learning&#45;rule/src/header/MSE.hpp" name="/Users/stanislav/Github/MachineLearning/ML&#45;perceptron&#45;learning&#45;rule/src/header/MSE.hpp">
+<area shape="rect" id="Node000001" title="In this file the Mean Squared Error (MSE) function is defined." alt="" coords="119,5,337,61"/>
+<area shape="rect" id="Node000002" href="$perceptron_8hpp.html" title="In this file the Perceptron class is declared." alt="" coords="103,109,353,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,77,230,108,225,108,225,77"/>
+<area shape="rect" id="Node000003" href="$perceptron_8cpp.html" title="In this file the Perceptron class is implemented." alt="" coords="5,213,216,268"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="187,177,144,214,140,210,183,173"/>
+<area shape="rect" id="Node000004" href="$test_8cpp.html" title="In this file the tests for the Perceptron class are defined." alt="" coords="240,213,450,268"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="273,173,315,210,312,214,269,177"/>
+</map>

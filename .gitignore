@@ -31,5 +31,9 @@
 *.out
 *.app
 
+# Debug files
 src/test/build/*
 src/test/compile_run.zsh
+
+# Apple finder files
+.DS_Store

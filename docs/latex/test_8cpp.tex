@@ -1,0 +1,234 @@
+\doxysection{/\+Users/stanislav/\+Github/\+Machine\+Learning/\+ML-\/perceptron-\/learning-\/rule/src/test/test.cpp File Reference}
+\hypertarget{test_8cpp}{}\label{test_8cpp}\index{/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/test/test.cpp@{/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/test/test.cpp}}
+
+
+In this file the tests for the \doxylink{class_perceptron}{Perceptron} class are defined.  
+
+
+{\ttfamily \#include "{}../header/perceptron.\+hpp"{}}\newline
+{\ttfamily \#include "{}../header/csv\+\_\+reader.\+hpp"{}}\newline
+{\ttfamily \#include "{}catch.\+hpp"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+Include dependency graph for test.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{test_8cpp_a656eb5868e824d59f489f910db438420}{CATCH\+\_\+\+CONFIG\+\_\+\+MAIN}}
+\item 
+\#define \mbox{\hyperlink{test_8cpp_a07a9fe2f5b86d10f7d7106b2c5484d97}{WEIGHTS}}~std\+::vector$<$double$>$\{0.\+5, 0.\+5\}
+\item 
+\#define \mbox{\hyperlink{test_8cpp_adbb32e6744a151dde6686dbc26bdd342}{BIAS}}~0.\+5
+\item 
+\#define \mbox{\hyperlink{test_8cpp_ac9d3b34ee7e35eab6a81ed21f18f6e64}{LEARNING\+\_\+\+RATE}}~0.\+1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test_8cpp_ad6e97da4a3e396706cb553484eed9730}{TEST\+\_\+\+CASE}} ("{}Perceptron AND gate"{}, "{}\mbox{[}perceptron\mbox{]}"{})
+\begin{DoxyCompactList}\small\item\em Test case for the AND gate using the \doxylink{class_perceptron}{Perceptron} model. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_a074d9699e0d5ee0129b96d0b962184e3}{TEST\+\_\+\+CASE}} ("{}Perceptron XOR gate"{}, "{}\mbox{[}Perceptron XOR\mbox{]}"{})
+\begin{DoxyCompactList}\small\item\em Test case for the XOR gate using the \doxylink{class_perceptron}{Perceptron} model. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_aba5f39fc2dcc86ba0c972498d832de70}{TEST\+\_\+\+CASE}} ("{}Iris data set -\/ \mbox{\hyperlink{class_perceptron}{Perceptron}} Setosa en Versicolor"{}, "{}\mbox{[}Perceptron Iris\mbox{]}"{})
+\begin{DoxyCompactList}\small\item\em Test case for the Iris data set (Setosa vs Versicolor) using the \doxylink{class_perceptron}{Perceptron} model. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_aaf372382867f14fb8ce9dd3f6ccabc5f}{TEST\+\_\+\+CASE}} ("{}Iris data set -\/ \mbox{\hyperlink{class_perceptron}{Perceptron}} Versicolor en Virginica"{}, "{}\mbox{[}Perceptron Iris\mbox{]}"{})
+\begin{DoxyCompactList}\small\item\em Test case for the Iris data set (Versicolor vs Virginica) using the \doxylink{class_perceptron}{Perceptron} model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \mbox{\hyperlink{test_8cpp_aeb2a0ab4458078c2684a5787a0b567bf}{data}} = \mbox{\hyperlink{csv__reader_8hpp_a38550954af601075a26826f7a3468e44}{read\+\_\+csv}}("{}../../data/iris.\+csv"{})
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{test_8cpp_a327691ef38ce13387e33de7f7e6d57d1}{targets}} = \mbox{\hyperlink{csv__reader_8hpp_a38677660229fcf0600b2eeec45e96158}{get\+\_\+targets}}(data)
+\item 
+std\+::vector$<$ std\+::vector$<$ float $>$ $>$ \mbox{\hyperlink{test_8cpp_aa8a6ec6c61c9cc4c3ad2b078cd2f9c9d}{features}} = \mbox{\hyperlink{csv__reader_8hpp_a2047e21ff752eb3beebc7a9ac70cddff}{get\+\_\+features}}(data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+In this file the tests for the \doxylink{class_perceptron}{Perceptron} class are defined. 
+
+Unit tests for the \doxylink{class_perceptron}{Perceptron}, Perceptron\+Layer and Perceptron\+Network classes.
+
+\begin{DoxyAuthor}{Author}
+Stan Merlijn 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/02-\/14
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2025
+\end{DoxyCopyright}
+This file contains a series of test cases to verify the functionality of the \doxylink{class_perceptron}{Perceptron} and Perceptron\+Layer classes. The tests include training and prediction for various logic gates.
+
+Test Cases\+:
+\begin{DoxyItemize}
+\item \doxylink{class_perceptron}{Perceptron} for AND Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the AND gate.
+\item \doxylink{class_perceptron}{Perceptron} for XOR Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the XOR gate.
+\item \doxylink{class_perceptron}{Perceptron} for Iris Data Set\+: Tests the perceptron\textquotesingle{}s ability to learn the Setosa and Versicolor classes.
+\item \doxylink{class_perceptron}{Perceptron} for Iris Data Set\+: Tests the perceptron\textquotesingle{}s ability to learn the Versicolor and Virginica classes.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+The tests use the Catch2 framework for unit testing. 
+\end{DoxyNote}
+
+
+Definition in file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{test_8cpp_adbb32e6744a151dde6686dbc26bdd342}\index{test.cpp@{test.cpp}!BIAS@{BIAS}}
+\index{BIAS@{BIAS}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{BIAS}{BIAS}}
+{\footnotesize\ttfamily \label{test_8cpp_adbb32e6744a151dde6686dbc26bdd342} 
+\#define BIAS~0.\+5}
+
+Default bias for the perceptron. 
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_a656eb5868e824d59f489f910db438420}\index{test.cpp@{test.cpp}!CATCH\_CONFIG\_MAIN@{CATCH\_CONFIG\_MAIN}}
+\index{CATCH\_CONFIG\_MAIN@{CATCH\_CONFIG\_MAIN}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{CATCH\_CONFIG\_MAIN}{CATCH\_CONFIG\_MAIN}}
+{\footnotesize\ttfamily \label{test_8cpp_a656eb5868e824d59f489f910db438420} 
+\#define CATCH\+\_\+\+CONFIG\+\_\+\+MAIN}
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_ac9d3b34ee7e35eab6a81ed21f18f6e64}\index{test.cpp@{test.cpp}!LEARNING\_RATE@{LEARNING\_RATE}}
+\index{LEARNING\_RATE@{LEARNING\_RATE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{LEARNING\_RATE}{LEARNING\_RATE}}
+{\footnotesize\ttfamily \label{test_8cpp_ac9d3b34ee7e35eab6a81ed21f18f6e64} 
+\#define LEARNING\+\_\+\+RATE~0.\+1}
+
+Default learning rate for the perceptron. 
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_a07a9fe2f5b86d10f7d7106b2c5484d97}\index{test.cpp@{test.cpp}!WEIGHTS@{WEIGHTS}}
+\index{WEIGHTS@{WEIGHTS}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{WEIGHTS}{WEIGHTS}}
+{\footnotesize\ttfamily \label{test_8cpp_a07a9fe2f5b86d10f7d7106b2c5484d97} 
+\#define WEIGHTS~std\+::vector$<$double$>$\{0.\+5, 0.\+5\}}
+
+Default weights for the perceptron. 
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{test_8cpp_aba5f39fc2dcc86ba0c972498d832de70}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{test_8cpp_aba5f39fc2dcc86ba0c972498d832de70} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Iris data set -\/ \mbox{\hyperlink{class_perceptron}{Perceptron}} Setosa en Versicolor"{}}]{}{, }\item[{"{}"{}}]{}{\mbox{[}\+Perceptron Iris\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Test case for the Iris data set (Setosa vs Versicolor) using the \doxylink{class_perceptron}{Perceptron} model. 
+
+This test trains a perceptron on the subset of the Iris data set that contains only the Setosa and Versicolor classes. The perceptron is expected to correctly separate the two classes with a loss of 0. The final weights and loss are printed. 
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00148}{148}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_aaf372382867f14fb8ce9dd3f6ccabc5f}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{test_8cpp_aaf372382867f14fb8ce9dd3f6ccabc5f} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Iris data set -\/ \mbox{\hyperlink{class_perceptron}{Perceptron}} Versicolor en Virginica"{}}]{}{, }\item[{"{}"{}}]{}{\mbox{[}\+Perceptron Iris\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Test case for the Iris data set (Versicolor vs Virginica) using the \doxylink{class_perceptron}{Perceptron} model. 
+
+This test trains a perceptron on the subset of the Iris data set that contains only the Versicolor and Virginica classes. In this scenario, the perceptron cannot correctly separate the two classes, hence a non-\/zero loss is expected. The test prints the final weights and computed loss after training. 
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00210}{210}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_ad6e97da4a3e396706cb553484eed9730}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{test_8cpp_ad6e97da4a3e396706cb553484eed9730} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Perceptron AND gate"{}}]{}{, }\item[{"{}"{}}]{}{\mbox{[}perceptron\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Test case for the AND gate using the \doxylink{class_perceptron}{Perceptron} model. 
+
+This test case trains a perceptron on the AND gate truth table. The perceptron is expected to correctly learn the AND behavior\+:
+\begin{DoxyItemize}
+\item For inputs \{0, 0\}, \{0, 1\}, and \{1, 0\} the output should be 0.
+\item For input \{1, 1\} the output should be 1. The test prints the final weights and computed loss after training. 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00059}{59}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_a074d9699e0d5ee0129b96d0b962184e3}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{test_8cpp_a074d9699e0d5ee0129b96d0b962184e3} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Perceptron XOR gate"{}}]{}{, }\item[{"{}"{}}]{}{\mbox{[}\+Perceptron XOR\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Test case for the XOR gate using the \doxylink{class_perceptron}{Perceptron} model. 
+
+This test case trains a perceptron on the XOR gate truth table. Since the XOR function is non-\/linearly separable, a single perceptron cannot correctly learn the XOR behavior. Therefore, the expected behavior is\+:
+\begin{DoxyItemize}
+\item The perceptron incorrectly predicts the output for \{0, 0\} (i.\+e. output is not 0).
+\item The perceptron correctly predicts the output for \{0, 1\} (i.\+e. output is 1).
+\item The perceptron incorrectly predicts the output for \{1, 0\} (i.\+e. output is not 1).
+\item The perceptron correctly predicts the output for \{1, 1\} (i.\+e. output is 0).
+\end{DoxyItemize}
+
+The test prints the final weights and computed loss after training. 
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00095}{95}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{test_8cpp_aeb2a0ab4458078c2684a5787a0b567bf}\index{test.cpp@{test.cpp}!data@{data}}
+\index{data@{data}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{test_8cpp_aeb2a0ab4458078c2684a5787a0b567bf} 
+std\+::vector$<$std\+::vector$<$std\+::string$>$ $>$ data = \mbox{\hyperlink{csv__reader_8hpp_a38550954af601075a26826f7a3468e44}{read\+\_\+csv}}("{}../../data/iris.\+csv"{})}
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00044}{44}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_aa8a6ec6c61c9cc4c3ad2b078cd2f9c9d}\index{test.cpp@{test.cpp}!features@{features}}
+\index{features@{features}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{features}{features}}
+{\footnotesize\ttfamily \label{test_8cpp_aa8a6ec6c61c9cc4c3ad2b078cd2f9c9d} 
+std\+::vector$<$std\+::vector$<$float$>$ $>$ features = \mbox{\hyperlink{csv__reader_8hpp_a2047e21ff752eb3beebc7a9ac70cddff}{get\+\_\+features}}(data)}
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_a327691ef38ce13387e33de7f7e6d57d1}\index{test.cpp@{test.cpp}!targets@{targets}}
+\index{targets@{targets}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{targets}{targets}}
+{\footnotesize\ttfamily \label{test_8cpp_a327691ef38ce13387e33de7f7e6d57d1} 
+std\+::vector$<$int$>$ targets = \mbox{\hyperlink{csv__reader_8hpp_a38677660229fcf0600b2eeec45e96158}{get\+\_\+targets}}(data)}
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+

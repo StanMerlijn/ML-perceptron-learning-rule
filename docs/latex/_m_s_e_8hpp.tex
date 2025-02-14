@@ -1,0 +1,80 @@
+\doxysection{/\+Users/stanislav/\+Github/\+Machine\+Learning/\+ML-\/perceptron-\/learning-\/rule/src/header/\+MSE.hpp File Reference}
+\hypertarget{_m_s_e_8hpp}{}\label{_m_s_e_8hpp}\index{/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/header/MSE.hpp@{/Users/stanislav/Github/MachineLearning/ML-\/perceptron-\/learning-\/rule/src/header/MSE.hpp}}
+
+
+In this file the Mean Squared Error (MSE) function is defined.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for MSE.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{_m_s_e_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_m_s_e_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{_m_s_e_8hpp_a0e4e2ce9121d7f51ccc0d354270b1647}{MSE}} (const std\+::vector$<$ int $>$ \&targets, const std\+::vector$<$ int $>$ \&predictions)
+\begin{DoxyCompactList}\small\item\em Calculates the mean squared error between two vectors. MSE = Σ \texorpdfstring{$\vert$}{|} d – y \texorpdfstring{$\vert$}{|}2 / n. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+In this file the Mean Squared Error (MSE) function is defined. 
+
+\begin{DoxyAuthor}{Author}
+Stan Merlijn 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/02-\/14
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2025 
+\end{DoxyCopyright}
+
+
+Definition in file \mbox{\hyperlink{_m_s_e_8hpp_source}{MSE.\+hpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_m_s_e_8hpp_a0e4e2ce9121d7f51ccc0d354270b1647}\index{MSE.hpp@{MSE.hpp}!MSE@{MSE}}
+\index{MSE@{MSE}!MSE.hpp@{MSE.hpp}}
+\doxysubsubsection{\texorpdfstring{MSE()}{MSE()}}
+{\footnotesize\ttfamily \label{_m_s_e_8hpp_a0e4e2ce9121d7f51ccc0d354270b1647} 
+double MSE (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{targets}{, }\item[{const std\+::vector$<$ int $>$ \&}]{predictions}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the mean squared error between two vectors. MSE = Σ \texorpdfstring{$\vert$}{|} d – y \texorpdfstring{$\vert$}{|}2 / n. 
+
+This function computes the mean squared error (MSE) between the target values and the predicted values. The MSE is a measure of the average squared difference between the estimated values and the actual value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em targets} & A vector of target values. \\
+\hline
+{\em predictions} & A vector of predicted values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The mean squared error between the targets and predictions. Returns -\/1 if the sizes of the input vectors do not match. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_m_s_e_8hpp_source_l00029}{29}} of file \mbox{\hyperlink{_m_s_e_8hpp_source}{MSE.\+hpp}}.
+

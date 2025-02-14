@@ -1,0 +1,13 @@
+<map id="/Users/stanislav/Github/MachineLearning/ML&#45;perceptron&#45;learning&#45;rule/src/header/csv_reader.hpp" name="/Users/stanislav/Github/MachineLearning/ML&#45;perceptron&#45;learning&#45;rule/src/header/csv_reader.hpp">
+<area shape="rect" id="Node000001" title="In this class the CSV reader is defined. This is for reading the iris data set." alt="" coords="118,5,328,76"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,124,71,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,79,76,119,74,114,154,74"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,124,166,150"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,78,155,114,151,111,187,74"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="189,124,258,150"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,76,226,108,221,108,221,76"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="282,124,335,150"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="257,74,289,110,285,114,253,78"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="360,124,417,150"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="286,74,356,114,353,118,283,79"/>
+</map>

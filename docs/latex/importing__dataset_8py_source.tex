@@ -1,0 +1,21 @@
+\doxysection{/\+Users/stanislav/\+Github/\+Machine\+Learning/\+ML-\/perceptron-\/learning-\/rule/importing\+\_\+dataset.py}
+\hypertarget{importing__dataset_8py_source}{}\label{importing__dataset_8py_source}\mbox{\hyperlink{importing__dataset_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00008}00008\ \textcolor{keyword}{from}\ sklearn.datasets\ \textcolor{keyword}{import}\ load\_iris}
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00013}00013\ \textcolor{keywordflow}{if}\ \_\_name\_\_\ ==\ \textcolor{stringliteral}{'\_\_main\_\_'}:}
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00014}00014\ \ \ \ \ iris\ =\ load\_iris()}
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00015}00015\ \ \ \ \ \textcolor{comment}{\#\ Save\ the\ dataset\ (features\ and\ target)\ into\ a\ file.}}
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00016}00016\ \ \ \ \ \textcolor{keyword}{with}\ open(\textcolor{stringliteral}{'data/iris.csv'},\ \textcolor{stringliteral}{'w'})\ \textcolor{keyword}{as}\ f:}
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ range(len(iris.data)):}
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ f.write(\textcolor{stringliteral}{','}.join([str(x)\ \textcolor{keywordflow}{for}\ x\ \textcolor{keywordflow}{in}\ iris.data[i]])\ +\ \textcolor{stringliteral}{','}\ +\ str(iris.target[i])\ +\ \textcolor{stringliteral}{'\(\backslash\)n'})}
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00019}00019\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00020}00020\ \ \ \ \ \textcolor{comment}{\#\ Save\ the\ target\ values\ into\ a\ separate\ file.}}
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{with}\ open(\textcolor{stringliteral}{'data/iris\_target.csv'},\ \textcolor{stringliteral}{'w'})\ \textcolor{keyword}{as}\ f:}
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ range(len(iris.target)):}
+\DoxyCodeLine{\Hypertarget{importing__dataset_8py_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ f.write(str(iris.target[i])\ +\ \textcolor{stringliteral}{'\(\backslash\)n'})}
+
+\end{DoxyCode}
